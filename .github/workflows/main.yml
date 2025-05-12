@@ -45,7 +45,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ https://miniapp.line.me/2007397528-Vwrk4xLv }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
